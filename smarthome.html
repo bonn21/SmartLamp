@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lưu đồ thuật toán hệ thống nhà thông minh</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .block {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      width: 200px;
+      background-color: #f9f9f9;
+    }
+
+    .decision {
+      width: 100px;
+      transform: rotate(45deg);
+      background-color: #f0f0f0;
+    }
+
+    .arrow {
+      margin: 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lưu đồ thuật toán hệ thống nhà thông minh</h1>
+    <div class="flowchart">
+      <div class="block"><b>Bắt đầu</b></div>
+      <div class="arrow">↓</div>
+      <div class="block">Khởi tạo hệ thống<br>(cảm biến, Wi-Fi, Firebase)</div>
+      <div class="arrow">↓</div>
+      <div class="block">Đọc dữ liệu từ cảm biến<br>(nhiệt độ, độ ẩm, khí gas)</div>
+      <div class="arrow">↓</div>
+      <div class="block">Kiểm tra ngắt Timer</div>
+      <div class="arrow">↙  ↘</div>
+      <div class="block">Có ngắt</div>
+      <div class="block">Không ngắt</div>
+      <div class="arrow">↓</div>
+      <div class="block">Kiểm tra RFID</div>
+      <div class="arrow">↓</div>
+      <div class="decision">RFID hợp lệ?</div>
+      <div class="arrow">↙  ↘</div>
+      <div class="block">Đúng</div>
+      <div class="block">Sai</div>
+      <div class="arrow">↓</div>
+      <div class="block">Mở cửa</div>
+      <div class="arrow">↓</div>
+      <div class="block">Đóng cửa sau 5s</div>
+      <div class="arrow">↓</div>
+      <div class="block">Kiểm tra chế độ<br>(tự động/thủ công)</div>
+      <div class="arrow">↙  ↘</div>
+      <div class="block"><b>Chế độ tự động</b></div>
+      <div class="block"><b>Chế độ thủ công</b></div>
+      <div class="arrow">↓</div>
+      <div class="decision">Nhiệt độ >= 27°C?</div>
+      <div class="arrow">↙  ↘</div>
+      <div class="block">Đúng</div>
+      <div class="block">Sai</div>
+      <div class="arrow">↓</div>
+      <div class="block">Bật quạt phòng khách</div>
+      <div class="arrow">↘</div>
+      <div class="block">Tắt quạt phòng khách</div>
+      <div class="arrow">↓</div>
+      <div class="decision">Nồng độ khí gas > ngưỡng?</div>
+      <div class="arrow">↙  ↘</div>
+      <div class="block">Đúng</div>
+      <div class="block">Sai</div>
+      <div class="arrow">↓</div>
+      <div class="block">Bật quạt bếp, bật còi</div>
+      <div class="arrow">↘</div>
+      <div class="block">Tắt quạt bếp, tắt còi</div>
+      <div class="arrow">↓</div>
+      <div class="block"><b>Nhận lệnh từ Firebase</b></div>
+      <div class="arrow">↓</div>
+      <div class="block"><b>Điều khiển thiết bị</b><br>(đèn, quạt, còi, cửa)</div>
+      <div class="arrow">↓</div>
+      <div class="block">Gửi dữ liệu lên Firebase<br>(nhiệt độ, độ ẩm, khí gas)</div>
+      <div class="arrow">↓</div>
+      <div class="block">Quay lại đọc dữ liệu<br>từ cảm biến</div>
+    </div>
+  </div>
+</body>
+</html>
